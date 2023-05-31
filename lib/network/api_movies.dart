@@ -4,7 +4,7 @@ import 'package:pracitca2/models/popularDAO.dart';
 
 class ApiMovies {
   var url = Uri.parse(
-      "https://api.themoviedb.org/3/movie/popular?api_key=fee8a8099c56235ef6fce1d7bae09197");
+      "https://api.themoviedb.org/3/movie/popular?api_key=secrets.apiMovieKey");
 
   Future<List<Results>?> getPopular() async {
     final response = await http.get(url);
